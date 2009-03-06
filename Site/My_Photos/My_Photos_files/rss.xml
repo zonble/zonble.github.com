@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:iphoto="urn:iphoto:property" xmlns:iweb="http://www.apple.com/iweb" version="2.0">
+  <channel>
+    <title>My Photos</title>
+    <link>file://localhost/Users/zonble/Sites/zonble.github.com/Site/My_Photos/My_Photos.html</link>
+    <description>My Photos</description>
+    <item>
+      <title>WWDC 2008</title>
+      <link>file://localhost/Users/zonble/Sites/zonble.github.com/Site/My_Photos/Pages/WWDC_2008.html</link>
+      <guid isPermaLink="false">f603ce8e-c064-43c8-92b8-58a1cfb523a0</guid>
+    </item>
+    <item>
+      <title>Japan. 2008</title>
+      <link>file://localhost/Users/zonble/Sites/zonble.github.com/Site/My_Photos/Pages/Japan._2008.html</link>
+      <guid isPermaLink="false">8a3b95ce-72c0-4aa5-b5bf-966c32fbf28b</guid>
+    </item>
+    <item>
+      <title>India. 2008</title>
+      <link>file://localhost/Users/zonble/Sites/zonble.github.com/Site/My_Photos/Pages/India._2008.html</link>
+      <guid isPermaLink="false">2e8316f4-9bf1-43ca-a833-1de59c5e1974</guid>
+    </item>
+    <item>
+      <title>Bremen, Germany. 2007</title>
+      <link>file://localhost/Users/zonble/Sites/zonble.github.com/Site/My_Photos/Pages/Bremen,_Germany._2007.html</link>
+      <guid isPermaLink="false">cfa3e5cc-d6bd-4d8a-a476-48af45f016ed</guid>
+    </item>
+  </channel>
+</rss>
