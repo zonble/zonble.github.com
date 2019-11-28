@@ -80,7 +80,7 @@ withUnsafeBytes(of: int) { bytes in
 }
 ```
 
-把數字轉成 Bytes 有什麼用呢？舉個在 iOS 開發會遇到的情境好了：在處理一些比較底層的行為的時候，蘋果習慣使用 OSStatus 當做發生錯誤時的錯誤代碼，這個代碼其實是一個 32 位元整數，但是這個整數到底是什麼意思，往往要把這個整數轉換成四個 char，從 char 對應的字母嘗試解讀：這四個字母通常是某個單字的縮寫。 
+把數字轉成 Bytes 有什麼用呢？舉個在 iOS 開發會遇到的情境好了：在處理一些比較底層的行為的時候，蘋果習慣使用 OSStatus 當做發生錯誤時的錯誤代碼，這個代碼其實是一個 32 位元整數，但是這個整數到底是什麼意思，往往要把這個整數轉換成四個 char，從 char 對應的字母嘗試解讀：這四個字母通常是某個單字的縮寫。
 
 ``` swift
 var int: UInt32 = 1718449215
@@ -100,4 +100,11 @@ var data = str.data(using: .ascii)!
 withUnsafeBytes(of:data) { bytes in
 	return bytes.load(as: UInt32.self).bigEndian
 }
+```
+
+我們也可以把 \[UInt8\] 倒進 UnsafeRawPointer 裡頭，再轉成整數。
+
+``` swift
+var bytes:[UInt8] = [102, 109, 116, 63]
+UnsafeRawPointer(bytes).load(as: UInt32.self).bigEndian
 ```
