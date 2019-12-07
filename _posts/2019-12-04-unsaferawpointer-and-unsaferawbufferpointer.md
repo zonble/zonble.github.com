@@ -22,3 +22,45 @@ let i2 = bytes.load(as: Int.self)
 我們可以從 UnsafeMutableRawPointer 建立 UnsafeRawBufferPointer，但是在建立 UnsafeRawBufferPointer 的時候，除了指標的位置之外，還要提供這段記憶體的長度。
 
 接著，無論是 UnsafeMutableRawPointer 或是 UnsafeRawBufferPointer，我們都可以透過呼叫 `.load(as:)`，宣告成我們所想要的形態。
+
+所以，在 Swift 3 的年代，我們想要呼叫 Common Crypto 呼叫 MD5，可能寫成這樣：
+
+``` swift
+import var CommonCrypto.CC_MD5_DIGEST_LENGTH
+import func CommonCrypto.CC_MD5
+import typealias CommonCrypto.CC_LONG
+
+func MD5_1(string: String) -> Data {
+	let length = Int(CC_MD5_DIGEST_LENGTH)
+	let messageData = string.data(using: .utf8)!
+	var digestData = Data(count: length)
+
+	_ = digestData.withUnsafeMutableBytes { digestBytes -> UInt8 in
+		messageData.withUnsafeBytes { messageBytes -> UInt8 in
+			if let messageBytesBaseAddress = messageBytes.baseAddress, let digestBytesBlindMemory = digestBytes.bindMemory(to: UInt8.self).baseAddress {
+				let messageLength = CC_LONG(messageData.count)
+				CC_MD5(messageBytesBaseAddress, messageLength, digestBytesBlindMemory)
+			}
+			return 0
+		}
+	}
+	return digestData
+}
+```
+
+現在可以寫成這樣：
+
+``` swift
+import var CommonCrypto.CC_MD5_DIGEST_LENGTH
+import func CommonCrypto.CC_MD5
+import typealias CommonCrypto.CC_LONG
+
+func MD5_2(string: String) -> Data {
+	let length = Int(CC_MD5_DIGEST_LENGTH)
+	let digestData = [UInt8](repeating: 0, count: length)
+	let messageData = Array(string.data(using: .utf8)!)
+	let messageLength = CC_LONG(messageData.count)
+	CC_MD5(UnsafeMutableRawPointer(mutating: messageData), messageLength,UnsafeMutableRawPointer(mutating: digestData).bindMemory(to: UInt8.self, capacity: length))
+	return Data(digestData)
+}
+```
