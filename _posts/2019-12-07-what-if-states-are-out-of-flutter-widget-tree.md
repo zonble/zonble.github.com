@@ -68,15 +68,15 @@ class _MyWidgetState extends State<MyWidget> {
 
 如果我們把物件之間的關係畫成一張圖，大概像這樣。Flutter 當中，所有的 Widget 都會放在同一個樹狀結構當中，我們在這樣的樹狀結構之外，又多了一個對某個 singleton object 監聽的關係：
 
-![物件關係 1](flutter_objects1.png)
+![物件關係 1]({{ site.url }}/assets/flutter_objects1.png)
 
 這樣寫會有什麼問題呢？因為同樣的架構，你也很有可能會產生下面這種物件關係：
 
-![物件關係 2](flutter_objects2.png)
+![物件關係 2]({{ site.url }}/assets/flutter_objects2.png)
 
 如果你允許任一 Widget 都可以直接監聽某個 stream 的話，這就代表，在整顆 Widget Tree 裡頭的每個節點，都可以直接建立觀察的關係。但另一方面，在這個樹狀結構中，如果某一個 Widget 發生變動的時候，這個 Widget 都會繼續往下更新下方的節點狀態。所以，當你的物件是這種關係，而假設 MyCatalog 這個 Widget 不會在 build 的時候換掉底下的 children，那麼，就可以看到，這種架構會產生多餘的更新通知，綠色是 MyCatalog 去更新下方的 Widget，藍色則是下方 Widget 直接從 singleton object 的 stream 收到的通知：
 
-![物件關係 3](flutter_objects3.png)
+![物件關係 3]({{ site.url }}/assets/flutter_objects3.png)
 
 另外，如果 MyCatalog 在遇到發生變動的時候，選擇的實作是把底下的 children 都換掉，那麼，讓 MyAppBar、MyListItem 去監聽 singleton object 更是沒有意義，因為在他們收到 stream 傳來的消息、應該要更新狀態的時候，這些 Widget 都已經被移出 Widget Tree 了，然後我們有建立一批 Widget，再去監聽 stream…。
 
