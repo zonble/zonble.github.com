@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -21,18 +21,17 @@
 title: zonble
 email: zonble@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  在 KKBOX 上班，從 2005 年開始寫 Objective-C/Map app，從 2008 年寫 iOS app。
+  在 KKBOX 上班，從 2005 年開始寫 Objective-C/Mac app，從 2008 年寫 iOS app。
   Flutter GDE。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: zonble
-github_username:  zonble
+github_username: zonble
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
