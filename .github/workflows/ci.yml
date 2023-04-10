@@ -25,20 +25,20 @@ jobs:
           locale
           locale -c -k LC_NUMERIC
           localectl status
-      - name: Install Dependencies
-        run: |
-          sudo apt-get install fonts-arphic-ukai fonts-arphic-uming fonts-moe-standard-song fonts-moe-standard-kai
-          sudo apt-get install fonts-noto fonts-noto-cjk fonts-noto-color-emoji fonts-noto-cjk-extra
-          sudo apt-get install pandoc
-          sudo fc-cache -f -v
+      # - name: Install Dependencies
+      #   run: |
+      #     sudo apt-get install fonts-arphic-ukai fonts-arphic-uming fonts-moe-standard-song fonts-moe-standard-kai
+      #     sudo apt-get install fonts-noto fonts-noto-cjk fonts-noto-color-emoji fonts-noto-cjk-extra
+      #     sudo apt-get install pandoc
+      #     sudo fc-cache -f -v
       - name: Install Python Packages
         run: |
           pip install mkdocs
           pip install mkdocs-material
           pip install pillow cairosvg
-          pip install mkdocs-with-pdf
+          # pip install mkdocs-with-pdf
           # pip install git+https://github.com/pandocker/pandoc-docx-pagebreak-py
       - name: Build Book
         run: |
-          sh gendoc.sh
+          # sh gendoc.sh
           mkdocs gh-deploy --force --clean --verbose
