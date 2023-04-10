@@ -1,0 +1,39 @@
+site_name: zonble@github
+site_url: https://zonble.github.io/
+copyright: 2023 and onwards © Weizhong Yang a.k.a zonble
+site_author: Weizhong Yang a.k.a zonble
+theme:
+  name: material
+  language: "zh-TW"
+  palette:
+    - scheme: default
+      primary: white
+      # accent: pink
+      toggle:
+        name: Switch to light mode
+        icon: material/weather-sunny
+    - scheme: slate
+      primary: black
+      accent: pink
+      toggle:
+        name: Switch to dark mode
+        icon: material/weather-night
+  font:
+    text: Lato
+  # features:
+  #   - navigation.sections
+  #   - navigation.tracking
+  #   - navigation.instant
+
+plugins:
+  - social:
+      cards_font: Noto Sans TC
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/zonble
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/zonble
+  search:
+    language: "jp"
