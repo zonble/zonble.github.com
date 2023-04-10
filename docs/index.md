@@ -20,6 +20,7 @@ hide:
 
 ## Flutter 教學
 
+- [怎樣使用 Flutter 開發 Windows App](https://zonble.github.io/flutter_windows_app_dev_slide/)
 - [怎樣在 Flutter 中實作動畫](https://zonble.github.io/flutter_animation_slide/#/)
 - [怎樣使用 WillPopScope 的範例](https://zonble.github.io/willpopscope_demo/)
 
