@@ -25,10 +25,11 @@ hide:
   2020 年<br/>
   一本介紹多種音檔格式的小冊子，包括 PCM、MP3、AAC…等格式
 
-## Flutter 教學
+### Flutter 教學
 
+- [在 Cerence 介紹 Flutter 的投影片](https://zonble.github.io/cerence_slide/)：直接用 Flutter Web 做投影片
+- [怎樣在 Flutter 中實作動畫](https://zonble.github.io/flutter_animation_slide/#/)：直接用 Flutter Web 做投影片
 - [怎樣使用 Flutter 開發 Windows App](https://zonble.github.io/flutter_windows_app_dev_slide/)
-- [怎樣在 Flutter 中實作動畫](https://zonble.github.io/flutter_animation_slide/#/)
 - [怎樣使用 WillPopScope 的範例](https://zonble.github.io/willpopscope_demo/)
 
 ### 老東西備份
@@ -36,21 +37,26 @@ hide:
 - [盒子](https://zonble.github.io/nccubox/)：1997 年就讀大學期間所做的 HTML 報刊實驗
 - [自強暴](https://zonble.github.io/nccustrive/)：1997 年就讀大學期間所做的 HTML 報刊實驗
 
-## Flutter Packages
+## Coding
+
+### Flutter Packages
 
 - [flutter_platform_alert](https://github.com/zonble/flutter_platform_alert)：一套在各平台上呼叫原生 Alert Dialog 的元件
 - [flutter_window_close](https://github.com/zonble/flutter_window_close)：一套在各平台上處理視窗關閉事件的元件
-- [flutter_turtle](https://github.com/zonble/flutter_turtle)：使用 Flutter 實作類似 LOGO 語言的小烏龜畫圖
+- [flutter_turtle](https://github.com/zonble/flutter_turtle)：使用 Flutter 實作類似 LOGO 語言的小烏龜畫圖<br?>
+  另外，也有一個基於這個套件寫出來的 [LSystem 小玩具](https://zonble.github.io/flutter_lsystem/)
 - [flutter_progressed_play_button](https://github.com/zonble/flutter_progressed_play_button)：一套供 Flutter 下，有播放進度的按鈕元件
 - [flutter_animated_play_button](https://github.com/zonble/flutter_animated_play_button)：一套供 Flutter 下，用來顯示「播放中」的視覺元件
 
-## 參與的專案
+### 小麥注音輸入法
+
+從 2011 年開始參與，工作閒暇之餘開發給自己使用的注音輸入法。支援 macOS、Linux 與 ChromeOS。
 
 - [小麥注音輸入法 macOS 版](https://github.com/openvanilla/McBopomofo)
 - [小麥注音輸入法 fcitx 版（可於 Linux 使用）](https://github.com/openvanilla/fcitx5-mcbopomofo)
 - [小麥注音輸入法 ChromeOS 及網頁版本](https://github.com/openvanilla/McBopomofoWeb)
 
-## 小玩具
+### iOS 小玩具
 
 - [TurtleBuilder](https://github.com/zonble/TurtleBuilder)：使用 Swift 的 Function Builder 實作一套小烏龜畫圖
 - [CurlDSL](https://github.com/zonble/CurlDSL)：使用 curl 語法在 Swift 中建立 URLRequest 的小工具
@@ -58,3 +64,4 @@ hide:
 ## 聯絡我
 
 - [zonble@Twitter](https://twitter.com/zonble)
+- [zonble@GitHub](https://github.com/zonble)
