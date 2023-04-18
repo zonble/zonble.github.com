@@ -54,12 +54,20 @@ hide:
 
 - [小麥注音輸入法 macOS 版](https://github.com/openvanilla/McBopomofo)
 - [小麥注音輸入法 fcitx 版（可於 Linux 使用）](https://github.com/openvanilla/fcitx5-mcbopomofo)
-- [小麥注音輸入法 ChromeOS 及網頁版本](https://github.com/openvanilla/McBopomofoWeb)
+- [小麥注音輸入法 ChromeOS 及網頁版本](https://github.com/openvanilla/McBopomofoWeb)，也可以直接[在瀏覽器中使用](https://openvanilla.github.io/McBopomofoWeb/)
 
 ### iOS 小玩具
 
 - [TurtleBuilder](https://github.com/zonble/TurtleBuilder)：使用 Swift 的 Function Builder 實作一套小烏龜畫圖
 - [CurlDSL](https://github.com/zonble/CurlDSL)：使用 curl 語法在 Swift 中建立 URLRequest 的小工具
+
+### KKBOX 時期
+
+2011-2020 在 KKBOX 服務期間做的東西
+
+- [KKBOX OpenAPI For Objective-C](https://github.com/KKBOX/OpenAPI-ObjectiveC)
+- [KKBOX OpenAPI For Swift](https://github.com/KKBOX/OpenAPI-Swift)
+- [KKBOX OpenAPI For Dart](https://github.com/KKBOX/OpenAPI-Dart)
 
 ## 聯絡我
 
