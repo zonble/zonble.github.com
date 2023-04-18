@@ -68,6 +68,8 @@ hide:
 - [KKBOX OpenAPI For Objective-C](https://github.com/KKBOX/OpenAPI-ObjectiveC)
 - [KKBOX OpenAPI For Swift](https://github.com/KKBOX/OpenAPI-Swift)
 - [KKBOX OpenAPI For Dart](https://github.com/KKBOX/OpenAPI-Dart)
+- [KKCarPlayManager](https://github.com/KKBOX/KKCarPlayManager)
+- [KKBOXOpenAPISketchPlugin](https://github.com/KKBOX/KKBOXOpenAPISketchPlugin)
 
 ## 聯絡我
 
