@@ -35,7 +35,7 @@ hide:
 ### 老東西備份
 
 - [盒子](https://zonble.github.io/nccubox/)：1997 年就讀大學期間所做的 HTML 報刊實驗
-- [自強暴](https://zonble.github.io/nccustrive/)：1997 年就讀大學期間所做的 HTML 報刊實驗
+- [自強報](https://zonble.github.io/nccustrive/)：1997 年就讀大學期間所做的 HTML 報刊實驗
 
 ## Coding
 
