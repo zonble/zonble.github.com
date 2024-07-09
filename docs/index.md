@@ -24,6 +24,9 @@ hide:
 - [認識音檔](https://zonble.github.io/understanding_audio_files/)<br/>
   2020 年<br/>
   一本介紹多種音檔格式的小冊子，包括 PCM、MP3、AAC…等格式
+- [使用 Flutter 打造語音助理](https://zonble.github.io/flutter_voice_assistant)<br/>
+  2024 年<br/>
+  介紹如何使用 Flutter 與 Gemini API 打造語音助理的教材
 
 ### Flutter 教學
 
