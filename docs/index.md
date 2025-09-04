@@ -15,14 +15,15 @@ hide:
 
 ## 寫作 & 雜七雜八的東西
 
-- [防區狀況三生效—驗證精實案 2022 修訂版](https://zonble.github.io/zk3/)<br/>
-  2000 年初版、最後更新於 2023 年<br/>
+- [防區狀況三生效—驗證精實案 2024 修訂版](https://zonble.github.io/zk3/)<br/>
+  2000 年初版、最後更新於 2024 年<br/>
   一本根據我在 1999-2000 年間在金門防衛司令部的服役經歷寫成的作品
 - [KKBOX iOS/Mac OS X 基礎開發教材](https://kkbox.github.io/kkbox-ios-dev/)<br/>
   2015 年初版、最後更新於 2019 年<br/>
   一本根據 2008-2019 年時的 iOS app 開發經驗，用在 KKBOX 的教材
 - [認識音檔](https://zonble.github.io/understanding_audio_files/)<br/>
-  2020 年<br/>
+  2020 年內部初版<br/>
+  2022 年公開版本<br/>
   一本介紹多種音檔格式的小冊子，包括 PCM、MP3、AAC…等格式
 - [使用 Flutter 打造語音助理](https://zonble.github.io/flutter_voice_assistant)<br/>
   2024 年<br/>
